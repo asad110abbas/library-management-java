@@ -20,7 +20,7 @@ class LibraryApiTest {
     @Autowired MockMvc mvc;
     @Autowired ObjectMapper json;
 
-    private long post(String url, String body) throws Exception {
+    private long create(String url, String body) throws Exception {
         String res = mvc.perform(post(url).contentType(MediaType.APPLICATION_JSON).content(body))
                 .andExpect(status().isCreated()).andReturn().getResponse().getContentAsString();
         JsonNode node = json.readTree(res);
@@ -29,11 +29,11 @@ class LibraryApiTest {
 
     @Test
     void borrowAndReturnFlow() throws Exception {
-        long book = post("/api/books", """
+        long book = create("/api/books", """
             {"isbn":"9780134685991","title":"Effective Java","author":"Joshua Bloch","publishedYear":2018,"copies":1}""");
-        long member = post("/api/members", """
+        long member = create("/api/members", """
             {"name":"Ali","email":"ali@example.com"}""");
-        long loan = post("/api/loans", "{\"memberId\":%d,\"bookId\":%d}".formatted(member, book));
+        long loan = create("/api/loans", "{\"memberId\":%d,\"bookId\":%d}".formatted(member, book));
 
         mvc.perform(get("/api/books?q=effective")).andExpect(jsonPath("$[0].availableCopies").value(0));
 
