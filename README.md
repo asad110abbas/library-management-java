@@ -1,13 +1,13 @@
 # 📚 BRIHA · Library Management API (Java / Spring Boot)
 
-![BRIHA](https://img.shields.io/badge/BRIHA-Genesis_of_AGI-8B5CF6?style=for-the-badge&labelColor=0B1024) ![Module](https://img.shields.io/badge/Briha-Engineering-00F0FF?style=for-the-badge&labelColor=0B1024)
+![BRIHA](https://img.shields.io/badge/Part_of-BRIHA-8B5CF6?style=for-the-badge&labelColor=0B1024) ![Module](https://img.shields.io/badge/Briha-Engineering-00F0FF?style=for-the-badge&labelColor=0B1024)
 ![Java](https://img.shields.io/badge/Java_21-ED8B00?logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?logo=springboot&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA_/_Hibernate-59666C?logo=hibernate&logoColor=white)
 ![JUnit](https://img.shields.io/badge/JUnit_5-25A162?logo=junit5&logoColor=white)
 ![CI](https://github.com/asad110abbas/library-management-java/actions/workflows/ci.yml/badge.svg)
 
-> ⚡ **BRIHA: The Genesis of AGI.** This is a **Briha Engineering** module, part of the [BRIHA AI World](https://github.com/asad110abbas), built by **Syed Asad Abbas**.
+> ⚡ **Part of [BRIHA](https://github.com/asad110abbas)**, built by Syed Asad Abbas.
 
 A layered **Spring Boot REST API** for running a library: books, members, loans, returns and late fines,
 with real business rules enforced in a transactional service layer.
