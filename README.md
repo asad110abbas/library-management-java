@@ -6,6 +6,8 @@
 ![JUnit](https://img.shields.io/badge/JUnit_5-25A162?logo=junit5&logoColor=white)
 ![CI](https://github.com/asad110abbas/library-management-java/actions/workflows/ci.yml/badge.svg)
 
+> 🌌 Part of **[BRIHA AI World](https://github.com/asad110abbas)**, the AI-driven portfolio of Syed Asad Abbas.
+
 A layered **Spring Boot REST API** for running a library: books, members, loans, returns and late fines,
 with real business rules enforced in a transactional service layer.
 
